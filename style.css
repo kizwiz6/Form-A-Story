@@ -1,57 +1,70 @@
+/* CSS for Form a Story */
+
+/* Body Styles */
 body {
-    background-color: rgb(255, 199, 64);
-    font-family: "Open Sans", Arial;
-  }
-  
-  form {
-    line-height: 27px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-  
-  input[type="text"], input[type="number"] {
-    min-height: 15px;
-    border-radius: 5px;
-    border:1px solid #cccccc;
-  }
-  
-  input[type="radio"] {
-    margin-left: 12px;
-  }
-  
-  #main {
-    background-color: rgba(255,255,255,0.8);
-    text-align: center;
-    height: 80vh;
-    border-radius: 15px;
-    margin: 2% 10%;
-    overflow: auto;
-  }
-  
-  #story {
-    padding: 0 3%;
-  }
-  
-  #top {
-    background-color: rgb(255, 255, 255);
-    margin: 2% 10%;
-    border-radius: 15px;
-  }
-  
-  #top img {
-    display: block;
-    width: 35%;
-    margin: 0 auto;
-  }
-  
-  .italics {
-    font-style: italic;
-  }
-  
-  .word {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
+  background-color: rgb(255, 199, 64);
+  font-family: "Open Sans", Arial, sans-serif; /* Added additional fallback */
+}
+
+/* Form Styles */
+form {
+  line-height: 1.5; /* Adjusted line height */
+}
+
+/* Heading Styles */
+h1, h2 {
+  font-size: 20px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"] {
+  min-height: 30px; /* Increased minimum height */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none; /* Added focus style */
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+  vertical-align: middle; /* Better alignment */
+}
+
+/* Main Section Styles */
+#main {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  min-height: 80vh; /* Changed height to min-height */
+  border-radius: 15px;
+  margin: 2% 10%;
+  overflow: auto;
+}
+
+/* Story Section Styles */
+#story {
+  padding: 0 3%;
+}
+
+/* Top Section Styles */
+#top {
+  background-color: rgb(255, 255, 255);
+  margin: 2% 10%;
+  border-radius: 15px;
+}
+
+/* Top Image Styles */
+#top img {
+  display: block;
+  max-width: 100%; /* Responsive image */
+  margin: 0 auto;
+}
+
+/* Class Styles */
+.italics {
+  font-style: italic;
+}
+
+.word {
+  font-weight: bold;
+  text-decoration: underline;
+}
